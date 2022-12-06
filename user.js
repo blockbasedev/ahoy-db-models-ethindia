@@ -3,8 +3,8 @@ import { Schema, model } from 'mongoose';
 const UserSchema = new Schema(
   {
     walletAddress: { type: String },
+    username: { type: String },
     email: { type: String },
-    password: { type: String },
     verified: { type: Boolean, default: false },
     blocked: { type: Boolean, default: false },
   },
