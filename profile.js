@@ -11,6 +11,7 @@ const ProfileSchema = new Schema(
     twitterUserName: { type: String },
     telegram: { type: String },
     discord: { type: String },
+    lensProfile: { type: Boolean },
   },
   {
       timestamps: true,
