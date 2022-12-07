@@ -5,6 +5,7 @@ const ProfileSchema = new Schema(
     userId: {
       type: Schema.Types.ObjectId, required: true, ref: 'user', index: true,
     },
+    profileImg: { type: String },
     name: { type: String, required: true },
     about: { type: String },
     twitterUserName: { type: String },
