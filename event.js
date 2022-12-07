@@ -8,7 +8,7 @@ const EventSchema = new Schema(
     eventName: { type: String },
     description: { type: String },
     location: { type: String },
-    bannerPic: { type: Object },
+    bannerPic: { type: String },
     eventRefLink: { type: String },
     generatedQR: { type: String },
     date: { type: String },
