@@ -17,7 +17,7 @@ const EventSchema = new Schema(
     guestCount: { type: Number, default: 0 },
     isActive: { type: Boolean, default: false },
     isDeleted: { type: Boolean, default: false },
-    referalCode: { type: String, unique: true },
+    referalCode: { type: String, index: { unique: true } },
     otherLink: { type: String },
   },
   {
