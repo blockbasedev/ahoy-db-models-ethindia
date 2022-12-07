@@ -2,8 +2,8 @@ import { Schema, model } from 'mongoose';
 
 const EventSchema = new Schema(
   {
-    profileId: {
-      type: Schema.Types.ObjectId, required: true, ref: 'profile',
+    userId: {
+      type: Schema.Types.ObjectId, required: true, ref: 'user', index: true,
     },
     eventName: { type: String },
     description: { type: String },
