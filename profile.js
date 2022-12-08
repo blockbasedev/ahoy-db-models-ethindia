@@ -21,6 +21,7 @@ const ProfileSchema = new Schema(
     isCommunity: { type: Boolean, default: false },
     socialMediaLinks: { type: Object },
     website: { type: String },
+    nftHash: { type: String },
   },
   {
     timestamps: true,
