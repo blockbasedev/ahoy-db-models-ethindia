@@ -2,8 +2,8 @@ import { Schema, model } from 'mongoose';
 
 const GuestSchema = new Schema(
   {
-    profileId: {
-      type: Schema.Types.ObjectId, required: true, ref: 'profile',
+    userId: {
+      type: Schema.Types.ObjectId, required: true, ref: 'user',
     },
     eventId: {
       type: Schema.Types.ObjectId, required: true, ref: 'event',
