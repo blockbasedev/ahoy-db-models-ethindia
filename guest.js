@@ -8,7 +8,7 @@ const GuestSchema = new Schema(
     eventId: {
       type: Schema.Types.ObjectId, required: true, ref: 'event',
     },
-    details: { type: Object },
+    tagline: { type: String },
     checkIn: { type: Boolean, default: false },
   },
   {
