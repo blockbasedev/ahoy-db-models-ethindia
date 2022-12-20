@@ -5,7 +5,7 @@ const OptionSchema = new Schema(
     pollId: {
       type: Schema.Types.ObjectId, required: true, ref: 'poll',
     },
-    option: { type: String },
+    option: [{ type: String }],
     correct: { type: Boolean, default: false },
   },
   {
