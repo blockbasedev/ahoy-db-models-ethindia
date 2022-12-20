@@ -3,7 +3,7 @@ import { Schema, model } from 'mongoose';
 const OptionSchema = new Schema(
   {
     pollId: {
-        type: Schema.Types.ObjectId, required: true, ref: 'poll',
+      type: Schema.Types.ObjectId, required: true, ref: 'poll',
     },
     option: { type: String },
     correct: { type: Boolean, default: false },
