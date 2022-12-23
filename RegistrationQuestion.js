@@ -1,6 +1,6 @@
 import { Schema, model } from 'mongoose';
 
-const HostSchema = new Schema(
+const RegistrationQuestionSchema = new Schema(
   {
     profileId: {
       type: Schema.Types.ObjectId, required: true, ref: 'profile',
@@ -8,11 +8,12 @@ const HostSchema = new Schema(
     eventId: {
       type: Schema.Types.ObjectId, required: true, ref: 'event',
     },
-    desigination: { type: String },
+    question: { type: String },
+    answer: { type: String },
   },
   {
     timestamps: true,
   },
 );
 
-export default model('host', HostSchema);
+export default model('registrationQuestion', RegistrationQuestionSchema);
