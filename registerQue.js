@@ -9,7 +9,7 @@ const RegistrationQuestionSchema = new Schema(
       type: Schema.Types.ObjectId, required: true, ref: 'event',
     },
     question: { type: String },
-    answer: { type: String },
+    type: { type: String, enum : ['TEXT', 'LONGTEXT', 'CHECKBOX', 'SINGLE SELECT', 'URL', 'MULTI SELECT'], default: 'TEXT' }, 
   },
   {
     timestamps: true,
