@@ -16,4 +16,4 @@ const RegistrationQuestionSchema = new Schema(
   },
 );
 
-export default model('registrationQuestion', RegistrationQuestionSchema);
+export default model('registrationQue', RegistrationQuestionSchema);
