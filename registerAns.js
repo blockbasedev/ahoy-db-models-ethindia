@@ -18,4 +18,4 @@ const RegistrationAnsSchema = new Schema(
   },
 );
 
-export default model('registrationAnsSchema', RegistrationAnsSchema);
+export default model('registrationAns', RegistrationAnsSchema);
