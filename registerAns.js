@@ -9,7 +9,7 @@ const RegistrationAnsSchema = new Schema(
       type: Schema.Types.ObjectId, required: true, ref: 'event',
     },
     reQuestionId: {
-        type: Schema.Types.ObjectId, required: true, ref: 'registrationQue',
+        type: Schema.Types.ObjectId, required: true, ref: 'registrationQuestion',
       },
     ans: { type: String },
   },
